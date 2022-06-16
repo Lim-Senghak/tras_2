@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Battambang');
+/* root styling */
+
+:root{
+    --light : #f8f9fa;
+    --secondary: #adb5bd;
+    --dark: #343a40;
+    --primary-color: #9610fd ;
+    --secondary-color: #2ec4b6;
+    --border : #e9ecef;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+* > *{
+    box-sizing: border-box;
+}
+
+/* global styling */
+.text-light{
+    color: var(--light);
+}
+
+.text-secondary-color{
+    color: var(--secondary-color);
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.text-primary{
+    font-family: 'Battambang';
+    color: var(--secondary-color);
+}
+.tras{
+    margin-top: 0.5em;
+}
+.bg-light{
+    background-image: linear-gradient(var(--secondary),var(--secondary-color));;
+}
+.bg-light2{
+    background-color: transparent;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+.text-title{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.secondary-title{
+    font-family: 'Poppins' , sans-serif;
+}
+
+.display-1{
+    font-size: 22px;
+}
+
+.display-2{
+    font-size: 18px;
+    text-align: justify ;
+}
+
+.display-3{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.btn{
+    padding: 15px 20px;
+    border: none;
+}
+
+.object-fit{
+    max-height: 120px;
+    height: 80px;
+    width: 80px;
+    object-fit: fill;
+}
+.d-flex{
+    display:flex; 
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.mt-2{
+    margin-top: 10px;
+}
+.px-1{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+}
+.nav-link{
+    font-size: 18px;
+    margin: 12px;
+    color: var(--light);
+    font-family:'Battambang';
+}
+.nav-link:hover{
+    color: var(--dark);
+}
+#footer{
+    background-color: var(--light);
+    padding-top: 4em;
+}
+#footer .feature-post .flex-item{
+    margin-bottom: 10px;
+}
+#footer .tags a{
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+#footer .copyrights{
+    padding: 10px 0;
+    border-top: 2px solid var(--dark);
+}
+.row{
+    display: flex;
+}
+
+
+.col-3{
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding-right: 35px;
+}
+
+
+@media (max-width : 1024px){
+    .row{
+       flex-wrap: wrap;
+    }
+    .col-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width : 768px){
+    .col-3{
+        flex: 0 0 100%;
+        max-width: calc(100% - 50px);
+        padding-top: 40px 50px;
+    }
+}
+

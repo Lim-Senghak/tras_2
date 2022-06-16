@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tras</title>
+        <!-- font awesome icons cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+       
+    
+        <!-- custom style.css file -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+        
+    <!-- Header -->
+       <header id="header" class="shadow bg-light_header sticky"  >
+           <nav class="container navbar  " >
+               <a href="#" class="nav-brand text-sec">
+                    <img src="{% static 'image/tras_logo.png' %}" alt="tras_logo">
+                </a>
+
+                <!-- toggle button -->
+                <button  class="toggle-button" onclick="MyFuncstion()">
+                    <span><i class="fas fa-bars"></i></span>
+                </button>
+                
+
+                <!-- collapse on toggle button click -->
+                <div id="show" class="collapse" >
+                    <ul class="navbar-nav" id="backGroud"style=" z-index: 1;" >
+                        <a href="#" class="nav-bar">ពាណិជ្ជកម្ម</a> 
+                        <a href="#" class="nav-bar">ប្រវត្តិសាស្រ្ត</a> 
+                        <a href="#" class="nav-bar">កីឡា</a> 
+                        <a href="#" class="nav-bar">នយោបាយ</a> 
+                        <a href="#" class="nav-bar">ទេសចរណ៍</a> 
+                        <a href="#" class="nav-bar">តិចណូឡូជី</a>
+                    </ul>
+                </div>
+                  <!-- collapse on toggle button click -->
+                  <div class="collapse2">
+                      <ul class="navbar-nav">
+                        <div class="search-box">
+                            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                            <a class="search-btn" href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="nav-bar"><i class="fas fa-user"></i></a>
+                      </ul>
+                  </div>
+           </nav>
+
+           <script>
+            function MyFuncstion(){
+                var hum = document.getElementById("show");
+                if (hum.style.display == "none"){
+                    hum.style.display = "block";
+                } else{
+                    hum.style.display = "none";
+                }
+            }
+           </script>
+       </header>
+    <!-- .Header -->
+
+</body>
+</html>

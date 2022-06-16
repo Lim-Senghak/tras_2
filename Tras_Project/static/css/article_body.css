@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Battambang');
+:root {
+  --color-background: white;
+  --color-text: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: 'Battambang';
+  color: var(--color-text);
+  width: 100%;
+    margin-top:0;
+    overflow-x: hidden;
+    margin-left: 0;
+}
+.article{
+  font-family: 'Battambang';
+}
+
+.article-container{
+  width: 50%;
+    padding: 2% 5% 0 5%;
+   
+}
+
+#article-main-img {
+    width: 100%;
+    max-height: 500px;
+    margin-left: 0;
+    padding: 2% 5% 0% 5%;
+    border-radius: 10px;
+}
+
+.article-body p {
+    text-align: left;
+}
+
+.article_descript{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.article_topic, .article_date {
+    font-size: 15px;
+    padding: 0;
+    margin: 0 30% 0 0;
+    font-weight: bold;
+}
+
+.article-title{
+    margin: 0 0 1% 0;
+    padding: 0;
+}
+
+.in-article-img {
+    width: 100%;
+}
+
+
+.column {
+    float: left;
+}
+
+.ads{
+    width: 24%;
+    padding-left: 7%;
+    padding-top: 2%;
+    
+}
+
+.ads img{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.article:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+   .article-container{
+  width: 95%;
+       margin: 1% 2% 5% 2%; 
+}
+ 
+}
